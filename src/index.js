@@ -10,13 +10,15 @@ import { Amplify } from 'aws-amplify';
 import amplifyconfig from './amplifyconfiguration.json';
 import { Authenticator } from '@aws-amplify/ui-react';
 
+import NavBar from './ui-components/NavBar';
+
 Amplify.configure(amplifyconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Authenticator>
-      <nav>My Navbar</nav>
+      <NavBar width={"100%"} />
       Hello, World!
     </Authenticator>
   </React.StrictMode>
