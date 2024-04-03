@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-pilippictureshower-dev-6bfd4-authRole",
+      "UnauthRoleArn": "arn:aws:iam::951503012688:role/amplify-pilippictureshower-dev-6bfd4-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::951503012688:role/amplify-pilippictureshower-dev-6bfd4-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-pilippictureshower-dev-6bfd4-deployment",
+      "UnauthRoleName": "amplify-pilippictureshower-dev-6bfd4-unauthRole",
+      "StackName": "amplify-pilippictureshower-dev-6bfd4",
+      "StackId": "arn:aws:cloudformation:eu-west-1:951503012688:stack/amplify-pilippictureshower-dev-6bfd4/60a57240-f1c9-11ee-92a5-0225227cddfd",
+      "AmplifyAppId": "d34goj0jsiy67w"
+    },
+    "categories": {
+      "auth": {
+        "PilipPictureShower": {}
+      }
+    }
+  }
+}
