@@ -13,7 +13,7 @@ import {
 } from "./utils";
 import { Flex, Icon, Image, Text } from "@aws-amplify/ui-react";
 export default function Post(props) {
-  const { overrides: overridesProp, ...rest } = props;
+  const { post, overrides: overridesProp, ...rest } = props;
   const variants = [
     {
       overrides: {
@@ -180,7 +180,7 @@ export default function Post(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         whiteSpace="pre-wrap"
-        children="Hey&#xA;Check our our new article “Top Icons Packs and Resources for Web”. You are in!"
+        children={post?.text}
         {...getOverrideProps(overrides, "PostMessage")}
       ></Text>
       <Flex

@@ -12,6 +12,10 @@ import { Authenticator } from '@aws-amplify/ui-react';
 
 import NavBar from './ui-components/NavBar';
 
+import { 
+  PostCollection 
+} from './ui-components';
+
 Amplify.configure(amplifyconfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +23,13 @@ root.render(
   <React.StrictMode>
     <Authenticator>
       <NavBar width={"100%"} />
-      Hello, World!
+      
+      <PostCollection overrideItems={({ item }) => ({
+          overrides: {
+            PostOwner: { children: item.owner }
+          }
+        })}
+      />
     </Authenticator>
   </React.StrictMode>
 );

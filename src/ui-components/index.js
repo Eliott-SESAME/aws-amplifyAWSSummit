@@ -6,6 +6,7 @@
 
 export { default as NavBar } from "./NavBar";
 export { default as Post } from "./Post";
+export { default as PostCollection } from "./PostCollection";
 export { default as PostCreateForm } from "./PostCreateForm";
 export { default as PostUpdateForm } from "./PostUpdateForm";
 export { default as studioTheme } from "./studioTheme";

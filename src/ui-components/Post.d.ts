@@ -5,6 +5,7 @@
  **************************************************************************/
 
 import * as React from "react";
+import { Post } from "../API.ts";
 import { FlexProps, IconProps, ImageProps, TextProps } from "@aws-amplify/ui-react";
 export declare type EscapeHatchProps = {
     [elementHierarchy: string]: Record<string, unknown>;
@@ -42,6 +43,8 @@ export declare type PostOverridesProps = {
     "Share stroke icon "?: PrimitiveOverrideProps<IconProps>;
 } & EscapeHatchProps;
 export declare type PostProps = React.PropsWithChildren<Partial<FlexProps> & {
+    post?: Post;
+} & {
     property1?: "Default";
 } & {
     overrides?: PostOverridesProps | undefined | null;
